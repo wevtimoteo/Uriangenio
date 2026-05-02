@@ -56,12 +56,12 @@ jobs:
             throw "DalamudPackager did not produce latest.zip."
           }
 
-          $manifest = Get-ChildItem -Path $zip.DirectoryName -Filter Echoglossian.json |
+          $manifest = Get-ChildItem -Path $zip.DirectoryName -Filter Echoglossian75.json |
             Sort-Object LastWriteTimeUtc -Descending |
             Select-Object -First 1
 
           if (-not $manifest) {
-            throw "Could not find packaged Echoglossian.json next to $($zip.FullName)."
+            throw "Could not find packaged Echoglossian75.json next to $($zip.FullName)."
           }
 
           New-Item -ItemType Directory -Force -Path public | Out-Null

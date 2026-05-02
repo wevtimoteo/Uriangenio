@@ -4,6 +4,7 @@ This fork is prepared for FFXIV Patch 7.5 / Dalamud API 15.
 
 Relevant bump:
 
+- The plugin is published as `Echoglossian 7.5` with `InternalName`/assembly `Echoglossian75`.
 - `Echoglossian.csproj` uses `Dalamud.NET.Sdk/15.0.0`.
 - `DalamudPackager` is pinned to `15.0.0`.
 - `TargetFramework` is `net10.0-windows`.
@@ -63,9 +64,9 @@ The workflow publishes both:
 
 4. Click the plus button, then save.
 
-5. Open `/xlplugins`, search for `Echoglossian`, and install or update it.
+5. Open `/xlplugins`, search for `Echoglossian 7.5`, and install or update it.
 
-If you already have the official Echoglossian installed, uninstalling it first can make it clearer that the install is coming from your custom repository.
+This build uses `InternalName` `Echoglossian75`, so it is separate from the official `Echoglossian` entry.
 
 ## Local build option
 
