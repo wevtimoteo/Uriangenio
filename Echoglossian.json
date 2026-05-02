@@ -1,15 +1,15 @@
 ﻿{
   "Name": "Echoglossian",
-  "Author": "lokinmodar",
+  "Author": "lokinmodar / wevtimoteo",
   "Contributors": [ "Limiana", "Bluefissure", "Soreenpeong", "samulopez" ],
   "InternalName": "Echoglossian",
   "ApplicableVersion": "any",
-  "Description": "Realtime game text translator",
-  "RepoUrl": "https://github.com/lokinmodar/Echoglossian",
+  "Description": "Realtime game text translator. Custom Patch 7.5 / Dalamud API 15 build.",
+  "RepoUrl": "https://github.com/wevtimoteo/Echoglossian",
   "Tags": [ "ffxiv", "Dalamud", "plugin", "translation", "UI", "Utility" ],
   "Disabled": false,
   "Testing": false,
-  "Punchline": "Dialogue and other in-game text translations? Yes we have!\nKnown Issues at: https://github.com/lokinmodar/Echoglossian/issues/12",
+  "Punchline": "Dialogue and other in-game text translations? Yes we have!\nCustom Patch 7.5 / Dalamud API 15 build.",
   "IsHide": false,
   "IsTestingExclusive": false,
   "LoadPriority": 0,
@@ -17,5 +17,5 @@
     ""
   ],
   "DevSupportState": "ACTIVE",
-  "IconUrl": "https://raw.githubusercontent.com/lokinmodar/Echoglossian/APIv4/images/icon.png"
+  "IconUrl": "https://raw.githubusercontent.com/wevtimoteo/Echoglossian/codex/patch-7-5/images/icon.png"
 }

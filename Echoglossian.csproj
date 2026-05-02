@@ -12,11 +12,11 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <AssemblyName>Echoglossian</AssemblyName>
     <Platforms>x64</Platforms>
-    <Authors>lokinmodar</Authors>
+    <Authors>lokinmodar; wevtimoteo</Authors>
     <NeutralLanguage>en</NeutralLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <VersionMajor>4</VersionMajor>
-    <VersionSeries Condition="'$(VersionSeries)' == ''">00</VersionSeries>
+    <VersionSeries Condition="'$(VersionSeries)' == ''">75</VersionSeries>
     <VersionMinor>$([System.DateTime]::UtcNow.ToString("yy"))$(VersionSeries)</VersionMinor>
     <VersionPatch Condition="'$(VersionPatch)' == ''">$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
     <VersionRevision Condition="'$(VersionRevision)' == ''">$([System.DateTime]::UtcNow.ToString("HHmm"))</VersionRevision>
@@ -29,16 +29,16 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <NoWarn>IDE0003</NoWarn>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Company>lokinmodar</Company>
+    <Company>lokinmodar; wevtimoteo</Company>
     <Description>Final Fantasy XIV game text translator</Description>
-    <Copyright>lokinmodar - 2021-2025</Copyright>
-    <PackageProjectUrl>https://github.com/lokinmodar/Echoglossian/</PackageProjectUrl>
+    <Copyright>lokinmodar - 2021-2026</Copyright>
+    <PackageProjectUrl>https://github.com/wevtimoteo/Echoglossian/</PackageProjectUrl>
     <Nullable>enable</Nullable>
     <ApplicationIcon>minfilia.ico</ApplicationIcon>
     <PackageLicenseExpression>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageIconUrl>https://github.com/lokinmodar/Echoglossian/blob/APIv4/images/logo.png?raw=true</PackageIconUrl>
-    <RepositoryUrl>https://github.com/lokinmodar/Echoglossian</RepositoryUrl>
+    <PackageIconUrl>https://github.com/wevtimoteo/Echoglossian/blob/codex/patch-7-5/images/logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/wevtimoteo/Echoglossian</RepositoryUrl>
     <PackageTags>ffxiv, translation, dll, plugin, XIVLauncher</PackageTags>
     <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -47,7 +47,7 @@
   <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="'$(EnableVisualStudioMatTargets)' == 'true' and !Exists('$(VisualStudioMatTargets)')" Label="MultilingualAppToolkit">
     <Warning Text="$(MSBuildProjectFile) is configured to use Visual Studio MAT targets, but the toolkit is unavailable during the build." />
   </Target>
-  <Target Name="GenerateResourcesDesigner" BeforeTargets="BeforeCompile" Inputs="Properties\Resources.resx" Outputs="Properties\Resources.Designer.cs">
+  <Target Name="GenerateResourcesDesigner" BeforeTargets="BeforeCompile" Inputs="Properties\Resources.resx" Outputs="Properties\Resources.Designer.cs" Condition="'$(MSBuildRuntimeType)' == 'Full'">
     <GenerateResource Sources="Properties\Resources.resx" StronglyTypedClassName="Resources" StronglyTypedNamespace="Echoglossian.Properties" StronglyTypedLanguage="C#" StronglyTypedFileName="Properties\Resources.Designer.cs" PublicClass="true" />
   </Target>
   <Target Name="RemoveDalamudProvidedAssembliesFromOutput" AfterTargets="CopyFilesToOutputDirectory">

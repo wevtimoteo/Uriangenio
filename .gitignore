@@ -351,6 +351,9 @@ AGENTS.md
 /.agents
 /docs/current-refactor-conversation-history.md
 /.plogon-local-build
+/.dalamud/
+/.dotnet_home/
+/local-repo/
 /.codex_character_tail.txt
 /.codex_characterstatus_tail.txt
 /.codex_lastlog_slice.txt

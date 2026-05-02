@@ -1,0 +1,92 @@
+name: Publish Custom Dalamud Repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DALAMUD_HOME: ${{ github.workspace }}\.dalamud\dev
+      REPO_URL: https://github.com/${{ github.repository }}
+      PAGE_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Download Dalamud staging
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          New-Item -ItemType Directory -Force -Path .dalamud | Out-Null
+          Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/stg/latest.zip -OutFile .dalamud/latest.zip
+          Expand-Archive -Force .dalamud/latest.zip .dalamud/dev
+
+      - name: Restore
+        run: dotnet restore Echoglossian.sln -r win-x64
+
+      - name: Build
+        run: dotnet build Echoglossian.sln --configuration Release --no-restore -p:VersionSeries=75
+
+      - name: Generate custom repository
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+
+          $zip = Get-ChildItem -Recurse -Filter latest.zip |
+            Sort-Object LastWriteTimeUtc -Descending |
+            Select-Object -First 1
+
+          if (-not $zip) {
+            throw "DalamudPackager did not produce latest.zip."
+          }
+
+          $manifest = Get-ChildItem -Path $zip.DirectoryName -Filter Echoglossian.json |
+            Sort-Object LastWriteTimeUtc -Descending |
+            Select-Object -First 1
+
+          if (-not $manifest) {
+            throw "Could not find packaged Echoglossian.json next to $($zip.FullName)."
+          }
+
+          New-Item -ItemType Directory -Force -Path public | Out-Null
+          Copy-Item $zip.FullName public/latest.zip -Force
+
+          $entry = Get-Content $manifest.FullName -Raw | ConvertFrom-Json
+          $zipUrl = "$($env:PAGE_BASE_URL)/latest.zip"
+
+          $entry | Add-Member -NotePropertyName RepoUrl -NotePropertyValue $env:REPO_URL -Force
+          $entry | Add-Member -NotePropertyName DownloadLinkInstall -NotePropertyValue $zipUrl -Force
+          $entry | Add-Member -NotePropertyName DownloadLinkUpdate -NotePropertyValue $zipUrl -Force
+          $entry | Add-Member -NotePropertyName DownloadLinkTesting -NotePropertyValue $zipUrl -Force
+          $entry | Add-Member -NotePropertyName LastUpdate -NotePropertyValue ([DateTimeOffset]::UtcNow.ToUnixTimeSeconds().ToString()) -Force
+
+          ConvertTo-Json -InputObject @($entry) -Depth 20 |
+            Set-Content public/pluginmaster.json -Encoding utf8
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
