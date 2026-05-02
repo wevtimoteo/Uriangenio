@@ -44,6 +44,10 @@ In game:
 
 Uriangenio uses `InternalName` `Uriangenio`, so it is separate from the official `Echoglossian` plugin entry.
 
+## Versioning
+
+Uriangenio versions follow the target FFXIV patch plus the fork version. For Patch 7.5, fork version `1.0.0` is recorded as informational version `7.5.1.0.0`. Dalamud reads the .NET assembly version, which supports four numeric parts, so the installed plugin displays `7.5.1.0`.
+
 ## Chat Commands
 
 `/uriangenio` opens the plugin configuration window.

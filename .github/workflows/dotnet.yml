@@ -34,7 +34,7 @@ jobs:
         run: dotnet restore Echoglossian.sln -r win-x64
 
       - name: Build
-        run: dotnet build Echoglossian.sln --configuration Release --no-restore -p:VersionSeries=75
+        run: dotnet build Echoglossian.sln --configuration Release --no-restore
 
       - name: Test
         run: dotnet test Echoglossian.sln --configuration Release --no-build --verbosity normal

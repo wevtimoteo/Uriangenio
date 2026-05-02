@@ -15,15 +15,14 @@
     <Authors>wevtimoteo</Authors>
     <NeutralLanguage>en</NeutralLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <VersionMajor>4</VersionMajor>
-    <VersionSeries Condition="'$(VersionSeries)' == ''">75</VersionSeries>
-    <VersionMinor>$([System.DateTime]::UtcNow.ToString("yy"))$(VersionSeries)</VersionMinor>
-    <VersionPatch Condition="'$(VersionPatch)' == ''">$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
-    <VersionRevision Condition="'$(VersionRevision)' == ''">$([System.DateTime]::UtcNow.ToString("HHmm"))</VersionRevision>
-    <Version>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</Version>
-    <AssemblyVersion>$(Version)</AssemblyVersion>
-    <FileVersion>$(Version)</FileVersion>
-    <InformationalVersion>$(Version)</InformationalVersion>
+    <GamePatchVersion>7.5</GamePatchVersion>
+    <PluginSemVerMajor>1</PluginSemVerMajor>
+    <PluginSemVerMinor>0</PluginSemVerMinor>
+    <PluginSemVerPatch>0</PluginSemVerPatch>
+    <Version>$(GamePatchVersion).$(PluginSemVerMajor)</Version>
+    <AssemblyVersion>$(GamePatchVersion).$(PluginSemVerMajor).$(PluginSemVerMinor)</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <InformationalVersion>$(GamePatchVersion).$(PluginSemVerMajor).$(PluginSemVerMinor).$(PluginSemVerPatch)</InformationalVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
