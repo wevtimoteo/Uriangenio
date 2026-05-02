@@ -31,10 +31,10 @@ Additional thanks to the original Echoglossian contributors and references:
 Add the custom plugin repository URL in Dalamud:
 
 ```text
-https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
+https://github.com/wevtimoteo/Uriangenio/releases/download/uriangenio-7.5.1.0-r3/pluginmaster.json
 ```
 
-This URL is served from the latest Uriangenio GitHub Release.
+This URL is served from the current Uriangenio GitHub Release.
 
 In game:
 

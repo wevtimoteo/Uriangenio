@@ -15,12 +15,13 @@ Relevant bump:
 The current published custom repository URL is:
 
 ```text
-https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
+https://github.com/wevtimoteo/Uriangenio/releases/download/uriangenio-7.5.1.0-r3/pluginmaster.json
 ```
 
-This URL points to the latest GitHub Release in this fork and is the primary
-publishing path for Uriangenio. Replace that release whenever publishing a new
-tested build, and make sure it includes:
+This URL points to the current GitHub Release asset in this fork and is the
+primary publishing path for Uriangenio. Replace it with the new tagged release
+asset URL whenever publishing a new tested build, and make sure the release
+includes:
 
 - `pluginmaster.json`
 - `latest.zip`
@@ -29,6 +30,8 @@ The `pluginmaster.json` asset should name the plugin `Uriangenio`, use
 `InternalName` `Uriangenio`, point `RepoUrl` at
 `https://github.com/wevtimoteo/Uriangenio`, and use the release asset URL for
 `DownloadLinkInstall`, `DownloadLinkUpdate`, and `DownloadLinkTesting`.
+
+The manifest must be a JSON array, even when it contains only Uriangenio.
 
 ## Optional GitHub Actions Pages publishing
 
@@ -66,7 +69,7 @@ The workflow publishes both:
 3. Under `Custom Plugin Repositories`, add:
 
    ```text
-   https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
+   https://github.com/wevtimoteo/Uriangenio/releases/download/uriangenio-7.5.1.0-r3/pluginmaster.json
    ```
 
 4. Click the plus button, then save.

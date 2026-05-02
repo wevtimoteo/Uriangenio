@@ -94,7 +94,7 @@ Before publishing, verify that the plugin identity remains:
 The release-based custom repository URL is:
 
 ```text
-https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
+https://github.com/wevtimoteo/Uriangenio/releases/download/uriangenio-7.5.1.0-r3/pluginmaster.json
 ```
 
 Release assets must include:
@@ -102,7 +102,7 @@ Release assets must include:
 - `pluginmaster.json`
 - `latest.zip`
 
-`pluginmaster.json` must point `DownloadLinkInstall`, `DownloadLinkUpdate`, and `DownloadLinkTesting` to a reachable `latest.zip`.
+`pluginmaster.json` must be a JSON array and must point `DownloadLinkInstall`, `DownloadLinkUpdate`, and `DownloadLinkTesting` to a reachable `latest.zip`.
 
 ## Local Custom Repository Testing
 
