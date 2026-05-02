@@ -6,7 +6,7 @@
 namespace Echoglossian.EFCoreSqlite;
 
 /// <summary>
-///     Gets or sets the translated string array records.   Represents the database context for Echoglossian translations.
+///     Gets or sets the translated string array records.   Represents the database context for Uriangenio translations.
 /// </summary>
 public class EchoglossianDbContext : DbContext
 {
@@ -30,7 +30,7 @@ public class EchoglossianDbContext : DbContext
   /// <param name="configDir">Plugin config directory.</param>
   public EchoglossianDbContext(string configDir)
   {
-    this.dbPath = Path.Combine(configDir, "Echoglossian.db");
+    this.dbPath = Path.Combine(configDir, "Uriangenio.db");
   }
 
   public DbSet<ActionTooltip> ActionTooltip { get; set; }

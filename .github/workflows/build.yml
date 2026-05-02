@@ -9,10 +9,10 @@ on:
     - master
 
 env:
-  PUBLIC_NAME: Echoglossian
-  SOLUTION_NAME: Echoglossian
-  INTERNAL_NAME: Echoglossian
-  RELEASE_DIR: Echoglossian\obj\x64\Release
+  PUBLIC_NAME: Uriangenio
+  SOLUTION_NAME: Uriangenio
+  INTERNAL_NAME: Uriangenio
+  RELEASE_DIR: bin\x64\Release\win-x64\Uriangenio
   PERSONAL_PLUGIN_REPO: lokinmodar/MyDalamudPlugins
   PR_PLUGIN_REPO: lokinmodar/DalamudPlugins
 

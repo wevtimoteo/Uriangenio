@@ -26,7 +26,7 @@ if (-not (Test-Path -LiteralPath $DalamudLibPath))
 
 New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 
-$projectPathInContainer = "/work/repo/Echoglossian.csproj"
+$projectPathInContainer = "/work/repo/Uriangenio.csproj"
 $dalamudPathInContainer = "/work/dalamud/"
 
 $msbuildArgs = @(
@@ -47,7 +47,7 @@ if ($UseLocalBuild)
 {
     $localArgs = @(
         "build",
-        (Join-Path $repoRoot "Echoglossian.csproj"),
+        (Join-Path $repoRoot "Uriangenio.csproj"),
         "-c", $Configuration,
         "-o", $outputDir,
         "-p:DalamudLibPath=$DalamudLibPath",

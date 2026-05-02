@@ -95,8 +95,8 @@ static string ResolveDatabasePath(string? explicitPath)
         appData,
         "XIVLauncher",
         "pluginConfigs",
-        "Echoglossian",
-        "Echoglossian.db");
+        "Uriangenio",
+        "Uriangenio.db");
 }
 
 static bool IsQuery(string sql)

@@ -58,14 +58,14 @@ $env:DALAMUD_HOME = "$PWD\.dalamud\dev"
 Restore and build:
 
 ```powershell
-dotnet restore Echoglossian.sln -r win-x64
-dotnet build Echoglossian.sln --configuration Release -p:VersionSeries=75
+dotnet restore Uriangenio.sln -r win-x64
+dotnet build Uriangenio.sln --configuration Release -p:VersionSeries=75
 ```
 
 Run the same test command used by CI:
 
 ```powershell
-dotnet test Echoglossian.sln --configuration Release --no-build --verbosity normal
+dotnet test Uriangenio.sln --configuration Release --no-build --verbosity normal
 ```
 
 ## Packaging

@@ -5,7 +5,7 @@ This fork is prepared for FFXIV Patch 7.5 / Dalamud API 15.
 Relevant bump:
 
 - The plugin is published as `Uriangenio` with `InternalName`/assembly `Uriangenio`.
-- `Echoglossian.csproj` uses `Dalamud.NET.Sdk/15.0.0`.
+- `Uriangenio.csproj` uses `Dalamud.NET.Sdk/15.0.0`.
 - `DalamudPackager` is pinned to `15.0.0`.
 - `TargetFramework` is `net10.0-windows`.
 - The default `VersionSeries` is `75`, so custom builds sort above earlier 7.x builds.
@@ -74,8 +74,8 @@ Local builds require .NET SDK 10.
 
 ```powershell
 $env:DALAMUD_HOME = "$PWD\.dalamud\dev"
-dotnet restore Echoglossian.sln -r win-x64
-dotnet build Echoglossian.sln --configuration Release -p:VersionSeries=75
+dotnet restore Uriangenio.sln -r win-x64
+dotnet build Uriangenio.sln --configuration Release -p:VersionSeries=75
 ```
 
 If `.dalamud\dev` does not exist yet, download the current staging Dalamud build first:

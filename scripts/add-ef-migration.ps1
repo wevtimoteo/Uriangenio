@@ -11,7 +11,7 @@ $ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repoRoot = Split-Path -Parent $scriptDir
-$projectPath = Join-Path $repoRoot "Echoglossian.csproj"
+$projectPath = Join-Path $repoRoot "Uriangenio.csproj"
 $outputDir = Join-Path $repoRoot "bin\x64\$Configuration\win-x64"
 $assemblyPatterns = @(
     "Dalamud*.dll",

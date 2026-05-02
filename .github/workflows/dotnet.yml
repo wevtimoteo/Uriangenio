@@ -31,10 +31,10 @@ jobs:
           Expand-Archive -Force .dalamud/latest.zip .dalamud/dev
 
       - name: Restore dependencies
-        run: dotnet restore Echoglossian.sln -r win-x64
+        run: dotnet restore Uriangenio.sln -r win-x64
 
       - name: Build
-        run: dotnet build Echoglossian.sln --configuration Release --no-restore
+        run: dotnet build Uriangenio.sln --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test Echoglossian.sln --configuration Release --no-build --verbosity normal
+        run: dotnet test Uriangenio.sln --configuration Release --no-build --verbosity normal

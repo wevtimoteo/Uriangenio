@@ -4,7 +4,7 @@ using Microsoft.Data.Sqlite;
 
 var options = InspectorOptions.Parse(args);
 string databasePath = string.IsNullOrWhiteSpace(options.DatabasePath)
-    ? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "XIVLauncher", "pluginConfigs", "Echoglossian", "Echoglossian.db")
+    ? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "XIVLauncher", "pluginConfigs", "Uriangenio", "Uriangenio.db")
     : options.DatabasePath;
 
 if (!File.Exists(databasePath))

@@ -1,8 +1,8 @@
-﻿# Localization Build Flow
+# Localization Build Flow
 
 ## Goal
 
-Keep Echoglossian's localization build safe for:
+Keep Uriangenio's localization build safe for:
 
 - local `dotnet build`
 - Plogon / `DalamudPluginsD17`
@@ -37,7 +37,7 @@ If a developer wants to use the Visual Studio MAT integration locally, they can
 enable it explicitly:
 
 ```powershell
-dotnet build Echoglossian.sln -p:EnableVisualStudioMatTargets=true
+dotnet build Uriangenio.sln -p:EnableVisualStudioMatTargets=true
 ```
 
 This is only intended for local workflows where MAT is installed. It must not
@@ -51,7 +51,7 @@ be required by CI or by `DalamudPluginsD17`.
 3. Build normally:
 
 ```powershell
-dotnet build Echoglossian.sln -c Debug --no-restore
+dotnet build Uriangenio.sln -c Debug --no-restore
 ```
 
 4. Commit the updated `.resx` files and the generated

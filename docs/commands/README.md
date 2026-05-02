@@ -1,6 +1,6 @@
 # Plugin Commands
 
-This folder contains the user-facing command reference for Echoglossian.
+This folder contains the user-facing command reference for Uriangenio.
 
 ## Available Commands
 

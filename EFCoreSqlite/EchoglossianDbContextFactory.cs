@@ -10,8 +10,8 @@ namespace Echoglossian.EFCoreSqlite
     public EchoglossianDbContext CreateDbContext(string[] args)
     {
       string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-      string fullPath = Path.Combine(appDataPath, "XIVLauncher", "pluginConfigs", "Echoglossian");
-      string dbFilePath = Path.Combine(fullPath, "Echoglossian.db");
+      string fullPath = Path.Combine(appDataPath, "XIVLauncher", "pluginConfigs", "Uriangenio");
+      string dbFilePath = Path.Combine(fullPath, "Uriangenio.db");
 
       var optionsBuilder = new DbContextOptionsBuilder<EchoglossianDbContext>();
       optionsBuilder.UseSqlite($"Data Source={dbFilePath}");

@@ -2,13 +2,13 @@
 
 ## Purpose
 
-`/uriangenio` opens the main Echoglossian configuration window.
+`/uriangenio` opens the main Uriangenio configuration window.
 
 It is the shortest path to the plugin settings UI while the game is running.
 
 ## Behavior
 
-When the command is executed, Echoglossian toggles its config window open.
+When the command is executed, Uriangenio toggles its config window open.
 
 The command does not translate text, probe addons, or touch the database.
 

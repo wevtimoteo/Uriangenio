@@ -2,9 +2,9 @@
 
 ## Purpose
 
-`/uriangeniodbmanager` opens Echoglossian's database editor window.
+`/uriangeniodbmanager` opens Uriangenio's database editor window.
 
-It is used to inspect and work with the local SQLite data store that Echoglossian keeps in the plugin config directory.
+It is used to inspect and work with the local SQLite data store that Uriangenio keeps in the plugin config directory.
 
 ## Behavior
 
