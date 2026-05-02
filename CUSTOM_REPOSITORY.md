@@ -9,7 +9,20 @@ Relevant bump:
 - `TargetFramework` is `net10.0-windows`.
 - The default `VersionSeries` is `75`, so custom builds sort above earlier 7.x builds.
 
-## Publish through GitHub Actions
+## Published custom repository
+
+The current published custom repository URL is:
+
+```text
+https://github.com/wevtimoteo/Echoglossian/releases/latest/download/pluginmaster.json
+```
+
+This URL points to the latest GitHub Release in this fork. The release must include:
+
+- `pluginmaster.json`
+- `latest.zip`
+
+## Publish through GitHub Actions Pages
 
 1. Push this branch to your fork:
 
@@ -45,7 +58,7 @@ The workflow publishes both:
 3. Under `Custom Plugin Repositories`, add:
 
    ```text
-   https://wevtimoteo.github.io/Echoglossian/pluginmaster.json
+   https://github.com/wevtimoteo/Echoglossian/releases/latest/download/pluginmaster.json
    ```
 
 4. Click the plus button, then save.
