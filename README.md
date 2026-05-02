@@ -34,6 +34,8 @@ Add the custom plugin repository URL in Dalamud:
 https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
 ```
 
+This URL is served from the latest Uriangenio GitHub Release.
+
 In game:
 
 1. Run `/xlsettings`.
