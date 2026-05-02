@@ -1,6 +1,6 @@
 <img src="https://github.com/lokinmodar/Echoglossian/raw/APIv4/images/logo.png" align="right" width="260px"/>
 
-# Echoglossian
+# Uriangenio
 
 [![Download count](https://img.shields.io/endpoint?url=https://qzysathwfhebdai6xgauhz4q7m0mzmrf.lambda-url.us-east-1.on.aws/Echoglossian)](https://github.com/lokinmodar/Echoglossian)
 [![GitHub stars](https://badgen.net/github/stars/lokinmodar/Echoglossian)](https://GitHub.com/lokinmodar/Echoglossian/stargazers/)
@@ -15,7 +15,7 @@
 
 ## Chat Commands
 
-***/eglo*** : Opens the Plugin Configuration Window
+***/uriangenio*** : Opens the Plugin Configuration Window
 
 
 ## Usage

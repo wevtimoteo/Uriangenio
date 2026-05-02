@@ -4,7 +4,7 @@ This fork is prepared for FFXIV Patch 7.5 / Dalamud API 15.
 
 Relevant bump:
 
-- The plugin is published as `Echoglossian 7.5` with `InternalName`/assembly `Echoglossian75`.
+- The plugin is published as `Uriangenio` with `InternalName`/assembly `Uriangenio`.
 - `Echoglossian.csproj` uses `Dalamud.NET.Sdk/15.0.0`.
 - `DalamudPackager` is pinned to `15.0.0`.
 - `TargetFramework` is `net10.0-windows`.
@@ -15,7 +15,7 @@ Relevant bump:
 The current published custom repository URL is:
 
 ```text
-https://github.com/wevtimoteo/Echoglossian/releases/latest/download/pluginmaster.json
+https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
 ```
 
 This URL points to the latest GitHub Release in this fork. The release must include:
@@ -25,30 +25,30 @@ This URL points to the latest GitHub Release in this fork. The release must incl
 
 ## Publish through GitHub Actions Pages
 
-1. Push this branch to your fork:
+1. Push `main` to your fork:
 
    ```powershell
-   git push -u origin codex/patch-7-5
+   git push -u origin main
    ```
 
-2. In GitHub, open `wevtimoteo/Echoglossian` > `Settings` > `Pages`.
+2. In GitHub, open `wevtimoteo/Uriangenio` > `Settings` > `Pages`.
 
 3. Set `Build and deployment` > `Source` to `GitHub Actions`.
 
 4. Open `Actions` > `Publish Custom Dalamud Repository`.
 
-5. Click `Run workflow` and run it from `codex/patch-7-5`.
+5. Click `Run workflow` and run it from `main`.
 
 6. After the workflow finishes, your custom repository URL should be:
 
    ```text
-   https://wevtimoteo.github.io/Echoglossian/pluginmaster.json
+   https://wevtimoteo.github.io/Uriangenio/pluginmaster.json
    ```
 
 The workflow publishes both:
 
-- `https://wevtimoteo.github.io/Echoglossian/pluginmaster.json`
-- `https://wevtimoteo.github.io/Echoglossian/latest.zip`
+- `https://wevtimoteo.github.io/Uriangenio/pluginmaster.json`
+- `https://wevtimoteo.github.io/Uriangenio/latest.zip`
 
 ## Add it in Dalamud
 
@@ -59,14 +59,14 @@ The workflow publishes both:
 3. Under `Custom Plugin Repositories`, add:
 
    ```text
-   https://github.com/wevtimoteo/Echoglossian/releases/latest/download/pluginmaster.json
+   https://github.com/wevtimoteo/Uriangenio/releases/latest/download/pluginmaster.json
    ```
 
 4. Click the plus button, then save.
 
-5. Open `/xlplugins`, search for `Echoglossian 7.5`, and install or update it.
+5. Open `/xlplugins`, search for `Uriangenio`, and install or update it.
 
-This build uses `InternalName` `Echoglossian75`, so it is separate from the official `Echoglossian` entry.
+This build uses `InternalName` `Uriangenio`, so it is separate from the official `Echoglossian` entry.
 
 ## Local build option
 
@@ -86,7 +86,7 @@ Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/stg/latest.zip
 Expand-Archive -Force .dalamud\latest.zip .dalamud\dev
 ```
 
-Depois do build, procure pelo `latest.zip` gerado pelo `DalamudPackager`. Para usar como custom repository, esse zip precisa estar hospedado em uma URL HTTP publica e o `pluginmaster.json` precisa apontar para essa URL nos campos `DownloadLinkInstall` e `DownloadLinkUpdate`.
+Depois do build, procure pelo `latest.zip` gerado pelo `DalamudPackager`. Para usar como custom repository, esse zip precisa estar hospedado em uma URL HTTP pública e o `pluginmaster.json` precisa apontar para essa URL nos campos `DownloadLinkInstall` e `DownloadLinkUpdate`.
 
 ## Immediate local repository
 

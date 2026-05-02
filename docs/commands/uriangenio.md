@@ -1,8 +1,8 @@
-# `/eglo`
+# `/uriangenio`
 
 ## Purpose
 
-`/eglo` opens the main Echoglossian configuration window.
+`/uriangenio` opens the main Echoglossian configuration window.
 
 It is the shortest path to the plugin settings UI while the game is running.
 

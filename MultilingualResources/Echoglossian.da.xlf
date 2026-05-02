@@ -853,12 +853,12 @@
           <target state="new">Show overlay title bar with speaker name when available</target>
         </trans-unit>
         <trans-unit id="AddonProbeHelpMessage" translate="yes" xml:space="preserve">
-          <source>Dumps a recursive addon structure probe to the log. Usage: /egloaddonprobe <it id="1" pos="open">&lt;addon name&gt;</it> [index] or /egloaddonprobe stop</source>
-          <target state="new">Dumps a recursive addon structure probe to the log. Usage: /egloaddonprobe <it id="1" pos="open">&lt;addon name&gt;</it> [index] or /egloaddonprobe stop</target>
+          <source>Dumps a recursive addon structure probe to the log. Usage: /uriangenioaddonprobe <it id="1" pos="open">&lt;addon name&gt;</it> [index] or /uriangenioaddonprobe stop</source>
+          <target state="new">Dumps a recursive addon structure probe to the log. Usage: /uriangenioaddonprobe <it id="1" pos="open">&lt;addon name&gt;</it> [index] or /uriangenioaddonprobe stop</target>
         </trans-unit>
         <trans-unit id="QuestProbeHelpMessage" translate="yes" xml:space="preserve">
-          <source>Dumps a full quest data probe to the log. Usage: /egloquestprobe <it id="1" pos="open">&lt;quest name or quest id&gt;</it></source>
-          <target state="new">Dumps a full quest data probe to the log. Usage: /egloquestprobe <it id="1" pos="open">&lt;quest name or quest id&gt;</it></target>
+          <source>Dumps a full quest data probe to the log. Usage: /uriangenioquestprobe <it id="1" pos="open">&lt;quest name or quest id&gt;</it></source>
+          <target state="new">Dumps a full quest data probe to the log. Usage: /uriangenioquestprobe <it id="1" pos="open">&lt;quest name or quest id&gt;</it></target>
         </trans-unit>
         <trans-unit id="JournalQuestDisplayModeNativeUiTranslation" translate="yes" xml:space="preserve">
           <source>Native UI translation</source>

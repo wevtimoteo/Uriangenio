@@ -1,24 +1,24 @@
-# `/egloaddonprobe`
+# `/uriangenioaddonprobe`
 
 ## Purpose
 
-`/egloaddonprobe` starts a recursive probe of a live addon and writes the result to the Dalamud log.
+`/uriangenioaddonprobe` starts a recursive probe of a live addon and writes the result to the Dalamud log.
 
 It is the main diagnostic command for understanding addon tree structure, node layout, component roots, and likely overlay anchors.
 
 ## Usage
 
 ```text
-/egloaddonprobe <addon name> [index]
-/egloaddonprobe stop
+/uriangenioaddonprobe <addon name> [index]
+/uriangenioaddonprobe stop
 ```
 
 Examples:
 
 ```text
-/egloaddonprobe JournalDetail
-/egloaddonprobe _ToDoList 0
-/egloaddonprobe stop
+/uriangenioaddonprobe JournalDetail
+/uriangenioaddonprobe _ToDoList 0
+/uriangenioaddonprobe stop
 ```
 
 ## Behavior

@@ -10,9 +10,9 @@
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <AssemblyName>Echoglossian75</AssemblyName>
+    <AssemblyName>Uriangenio</AssemblyName>
     <Platforms>x64</Platforms>
-    <Authors>lokinmodar; wevtimoteo</Authors>
+    <Authors>wevtimoteo</Authors>
     <NeutralLanguage>en</NeutralLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <VersionMajor>4</VersionMajor>
@@ -29,16 +29,16 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <NoWarn>IDE0003</NoWarn>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Company>lokinmodar; wevtimoteo</Company>
+    <Company>wevtimoteo</Company>
     <Description>Final Fantasy XIV game text translator</Description>
-    <Copyright>lokinmodar - 2021-2026</Copyright>
-    <PackageProjectUrl>https://github.com/wevtimoteo/Echoglossian/</PackageProjectUrl>
+    <Copyright>wevtimoteo - 2026</Copyright>
+    <PackageProjectUrl>https://github.com/wevtimoteo/Uriangenio/</PackageProjectUrl>
     <Nullable>enable</Nullable>
     <ApplicationIcon>minfilia.ico</ApplicationIcon>
     <PackageLicenseExpression>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageIconUrl>https://github.com/wevtimoteo/Echoglossian/blob/codex/patch-7-5/images/logo.png?raw=true</PackageIconUrl>
-    <RepositoryUrl>https://github.com/wevtimoteo/Echoglossian</RepositoryUrl>
+    <PackageIconUrl>https://github.com/wevtimoteo/Uriangenio/blob/main/images/logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/wevtimoteo/Uriangenio</RepositoryUrl>
     <PackageTags>ffxiv, translation, dll, plugin, XIVLauncher</PackageTags>
     <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>

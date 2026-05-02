@@ -70,15 +70,23 @@ public partial class Echoglossian
   /// </summary>
   private void BuildUi()
   {
+    if (this.config)
+    {
+      try
+      {
+        this.EchoglossianConfigUi();
+      }
+      catch (Exception ex)
+      {
+        PluginLog.Error($"Error drawing Uriangenio config UI: {ex}");
+        this.config = false;
+      }
+    }
+
     if (!this.configuration.PluginAssetsDownloaded)
     {
       this.ResetStructuredTooltipUiRuntime();
       return;
-    }
-
-    if (this.config)
-    {
-      this.EchoglossianConfigUi();
     }
 
     if (this.configuration.FontChangeTime > 0)
@@ -165,6 +173,7 @@ public partial class Echoglossian
   /// </summary>
   private void ConfigWindow()
   {
+    PluginLog.Information("Dalamud requested Uriangenio config UI.");
     this.config = true;
   }
 
@@ -175,6 +184,7 @@ public partial class Echoglossian
   /// <param name="arguments">Arguments associated with the command.</param>
   private void Command(string command, string arguments)
   {
+    PluginLog.Information("Uriangenio slash command requested config UI.");
     this.config = true;
   }
 }

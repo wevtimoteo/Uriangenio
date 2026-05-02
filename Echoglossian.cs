@@ -27,13 +27,13 @@ public partial class Echoglossian : IDalamudPlugin
   /// <summary>
   /// The command used to invoke the plugin config UI.
   /// </summary>
-  private const string SlashCommand = "/eglo";
+  private const string SlashCommand = "/uriangenio";
 
-  private const string DBManagerWindowCommand = "/eglodbmanager";
+  private const string DBManagerWindowCommand = "/uriangeniodbmanager";
 
-  private const string AddonProbeCommand = "/egloaddonprobe";
+  private const string AddonProbeCommand = "/uriangenioaddonprobe";
 
-  private const string QuestProbeCommand = "/egloquestprobe";
+  private const string QuestProbeCommand = "/uriangenioquestprobe";
 
   /// <summary>
   /// The language ID to translate to.
@@ -178,7 +178,7 @@ public partial class Echoglossian : IDalamudPlugin
     try
     {
       this.CreateOrUseDb();
-      PluginLog.Debug("Eglo database created or used successfully.");
+      PluginLog.Debug("Uriangenio database created or used successfully.");
     }
     catch (Exception e)
     {

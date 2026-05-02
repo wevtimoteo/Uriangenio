@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -776,10 +776,10 @@
     <value>ScenarioTree is waiting for stored quest data for {0} visible quests. The addon will stay untouched until all quest data is ready.</value>
   </data>
   <data name="AddonProbeHelpMessage" xml:space="preserve">
-    <value>Dumps a recursive addon structure probe to the log. Usage: /egloaddonprobe &lt;addon name&gt; [index] or /egloaddonprobe stop</value>
+    <value>Dumps a recursive addon structure probe to the log. Usage: /uriangenioaddonprobe &lt;addon name&gt; [index] or /uriangenioaddonprobe stop</value>
   </data>
   <data name="QuestProbeHelpMessage" xml:space="preserve">
-    <value>Dumps a full quest data probe to the log. Usage: /egloquestprobe &lt;quest name or quest id&gt;</value>
+    <value>Dumps a full quest data probe to the log. Usage: /uriangenioquestprobe &lt;quest name or quest id&gt;</value>
   </data>
   <data name="JournalQuestDisplayModeNativeUiTranslation" xml:space="preserve">
     <value>Native UI translation</value>

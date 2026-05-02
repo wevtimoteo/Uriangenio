@@ -36,7 +36,7 @@ public partial class Echoglossian
     if (string.IsNullOrWhiteSpace(addonName))
     {
       ChatGuiInterface.Print(
-          "Usage: /egloaddonprobe <addon name> [index] or /egloaddonprobe stop");
+          "Usage: /uriangenioaddonprobe <addon name> [index] or /uriangenioaddonprobe stop");
       return;
     }
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-`/egloquestprobe` is a diagnostic command for inspecting the full quest data shape that Echoglossian can currently see.
+`/uriangenioquestprobe` is a diagnostic command for inspecting the full quest data shape that Echoglossian can currently see.
 
 It is intended to help answer questions such as:
 
@@ -16,14 +16,14 @@ The command is meant for debugging and data-model validation. It is not part of 
 ## Usage
 
 ```text
-/egloquestprobe <quest id or quest name>
+/uriangenioquestprobe <quest id or quest name>
 ```
 
 Examples:
 
 ```text
-/egloquestprobe 662
-/egloquestprobe Strange Bedfellows
+/uriangenioquestprobe 662
+/uriangenioquestprobe Strange Bedfellows
 ```
 
 If the command is executed without arguments, it prints a short help message to chat.

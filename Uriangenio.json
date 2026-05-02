@@ -1,11 +1,11 @@
-﻿{
-  "Name": "Echoglossian 7.5",
-  "Author": "lokinmodar / wevtimoteo",
+{
+  "Name": "Uriangenio",
+  "Author": "wevtimoteo",
   "Contributors": [ "Limiana", "Bluefissure", "Soreenpeong", "samulopez" ],
-  "InternalName": "Echoglossian75",
+  "InternalName": "Uriangenio",
   "ApplicableVersion": "any",
   "Description": "Realtime game text translator. Custom Patch 7.5 / Dalamud API 15 build with a separate plugin identity.",
-  "RepoUrl": "https://github.com/wevtimoteo/Echoglossian",
+  "RepoUrl": "https://github.com/wevtimoteo/Uriangenio",
   "Tags": [ "ffxiv", "Dalamud", "plugin", "translation", "UI", "Utility" ],
   "Disabled": false,
   "Testing": false,
@@ -17,5 +17,5 @@
     ""
   ],
   "DevSupportState": "ACTIVE",
-  "IconUrl": "https://raw.githubusercontent.com/wevtimoteo/Echoglossian/codex/patch-7-5/images/icon.png"
+  "IconUrl": "https://raw.githubusercontent.com/wevtimoteo/Uriangenio/main/images/icon.png"
 }
